@@ -1,0 +1,14 @@
+<mat-toolbar *ngIf="showTopTop" class="mat-elevation-z6">
+        <!-- <span class="fill-remaining-space"></span> -->
+        <span>top-top</span>
+</mat-toolbar>
+<mat-toolbar color="primary" class="mat-elevation-z6">
+        <mat-icon svgIcon="hide" (click)="manageSidebar('start')" style="cursor: pointer"></mat-icon>
+        <!-- <img style="height:100%" src="assets/img/kylinLogo.png" alt=""> -->
+        <!-- <mat-icon *ngIf="!showTopTop" svgIcon="down" (click)="down()" style="cursor: pointer"></mat-icon>
+        <mat-icon *ngIf="showTopTop" svgIcon="up" (click)="up()" style="cursor: pointer"></mat-icon> -->
+        <!-- <span class="fill-remaining-space"></span> -->
+        <span class="fill-remaining-space"></span>
+        <mat-slide-toggle (change)="onChange($event)">黑夜模式</mat-slide-toggle>
+        <!-- <mat-icon svgIcon="hide" (click)="manageSidebar('end')" style="cursor: pointer"></mat-icon> -->
+</mat-toolbar>

@@ -1,0 +1,46 @@
+<form>
+  <mat-card>
+      <mat-card-header>
+          <mat-card-title>注册</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <mat-input-container class="full-width">
+              <input matInput type="text" placeholder="您的Email" formControlName="email">
+              <!-- <span matSuffix>@fisglobal.com</span> -->
+          </mat-input-container>
+          <mat-input-container class="full-width">
+              <input matInput type="text" placeholder="您的姓名" formControlName="name">
+              <!-- <span matSuffix>@fisglobal.com</span> -->
+          </mat-input-container>
+          <mat-input-container class="full-width">
+              <input matInput type="password" placeholder="您的密码" formControlName="password">
+              <!-- <span matSuffix>@fisglobal.com</span> -->
+          </mat-input-container>
+          <mat-input-container class="full-width">
+              <input matInput type="password" placeholder="重复输入您的密码" formControlName="repeat">
+              <!-- <span matSuffix>@fisglobal.com</span> -->
+          </mat-input-container>
+          <mat-grid-list cols="8" rowHeight="1:1">
+            <mat-grid-tile *ngFor="let item of items">
+              <mat-icon [svgIcon]="item"></mat-icon>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <!-- <app-age-input formControlName="dateOfBirth"></app-age-input> -->
+          <button mat-raised-button type="button" color="primary">注册</button>
+      </mat-card-content>
+      <mat-card-actions class="text-right">
+          <p>已有账号？<a href="" (click)="goLogin()" href="javascript:(0)">登录</a></p>
+          <p>忘记密码？<a href="">找回</a></p>
+      </mat-card-actions>
+  </mat-card>
+  <!-- <mat-card>
+      <mat-card-header>
+          <mat-card-title>每日佳句</mat-card-title>
+          <mat-card-subtitle>海阔凭鱼跃，天高任鸟飞</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets/img/lz1.jpg" alt="">
+      <mat-card-content>
+              Learn wisdom by the follies of others
+      </mat-card-content>
+  </mat-card> -->
+</form>

@@ -1,0 +1,88 @@
+import { DirectiveModule } from './../directive/directive.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatSidenavModule, MatAutocompleteModule, MatDatepickerModule,
+    MatFormFieldModule, MatInputModule, MatRadioModule, MatSelectModule,
+    MatSliderModule, MatSlideToggleModule, MatMenuModule, MatToolbarModule,
+    MatListModule, MatGridListModule, MatCardModule, MatStepperModule,
+    MatTabsModule, MatExpansionModule, MatButtonModule, MatButtonToggleModule,
+    MatChipsModule, MatIconModule, MatProgressSpinnerModule, MatProgressBarModule,
+    MatDialogModule, MatTooltipModule, MatSnackBarModule, MatTableModule,
+    MatSortModule, MatPaginatorModule, MatCheckboxModule, MatNativeDateModule } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { AgeInputComponent } from './age-input/age-input.component';
+@NgModule({
+    declarations: [ConfirmDialogComponent, AgeInputComponent],
+    imports: [
+        CommonModule,
+        MatCheckboxModule,
+        MatSidenavModule,
+        MatAutocompleteModule,
+        MatDatepickerModule,
+        MatFormFieldModule,
+        MatMenuModule,
+        MatInputModule,
+        MatRadioModule,
+        MatSelectModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatToolbarModule,
+        MatListModule,
+        MatGridListModule,
+        MatCardModule,
+        MatStepperModule,
+        MatTabsModule,
+        MatExpansionModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatChipsModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
+        MatProgressBarModule,
+        MatDialogModule,
+        MatTooltipModule,
+        MatSnackBarModule,
+        MatTableModule,
+        MatSortModule,
+        MatPaginatorModule,
+        MatNativeDateModule,
+        DirectiveModule
+    ],
+    exports: [
+        CommonModule,
+        MatCheckboxModule,
+        MatSidenavModule,
+        MatAutocompleteModule,
+        MatDatepickerModule,
+        MatFormFieldModule,
+        MatMenuModule,
+        MatInputModule,
+        MatRadioModule,
+        MatSelectModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatToolbarModule,
+        MatListModule,
+        MatGridListModule,
+        MatCardModule,
+        MatStepperModule,
+        MatTabsModule,
+        MatExpansionModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatChipsModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
+        MatProgressBarModule,
+        MatDialogModule,
+        MatTooltipModule,
+        MatSnackBarModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatNativeDateModule,
+        DirectiveModule
+    ]
+})
+export class SharedModule {
+    constructor() { }
+}

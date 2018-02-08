@@ -1,0 +1,21 @@
+{
+    "top-top": [
+        {"id": "dim", "name": "多维度分析系统", "icon":"projects"},
+        {"id": "doc", "name": "文档管理系统", "icon":"month"},
+        {"id": "monitor", "name": "监控平台", "icon":"week"}
+    ],
+    "monitor": [
+        {"name": "采集任务", "icon":"projects", "child": [
+            {"name": "新增"},
+            {"name": "删除"}
+        ]},
+        {"name": "调度任务", "icon":"month", "url":"login","child": [
+            {"name": "登陆", "icon":"projects", "url": "login"},
+            {"name": "注册", "icon":"week", "url": "register"}
+        ]},
+        {"name": "库表空间", "icon":"week", "child": [
+            {"name": "jj"},
+            {"name": "kk"}
+        ]}
+    ]
+}
