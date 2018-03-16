@@ -1,3 +1,4 @@
+import { AppStoreModule } from './../reducers/index';
 import { SharedModule } from './../shared/shared.module';
 import { SiderbarComponent } from './siderbar/siderbar.component';
 import { HeaderComponent } from './header/header.component';
@@ -7,6 +8,7 @@ import { loadSvgResources } from '../utils/svg.util';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import 'rxjs/add/operator/take';
+import { AppEffectsModule } from '../effects';
 @NgModule({
     declarations: [
         HeaderComponent,
@@ -14,7 +16,9 @@ import 'rxjs/add/operator/take';
         SiderbarComponent
     ],
     imports: [
-        SharedModule
+        SharedModule,
+        AppStoreModule,
+        AppEffectsModule
     ],
     exports: [
         HeaderComponent,
